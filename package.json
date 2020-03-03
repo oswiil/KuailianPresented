@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "aos": "^2.3.4",
     "eslint": "^6.7.2",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -17,12 +18,17 @@
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.7",
     "gatsby-transformer-yaml": "^2.2.18",
+    "lodash.get": "^4.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-form-with-constraints": "^0.14.0",
     "react-helmet": "^5.2.1"
   },
+  "resolutions": {
+    "sharp": "^0.23.4"
+  },
+  
   "devDependencies": {
     "prettier": "^1.19.1"
   },

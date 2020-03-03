@@ -34,18 +34,16 @@ export default class IndexPage extends React.Component {
         <div className="Contact__form">
           <form method="post" action="#">
             <label>
-              NickName*
               <input
                 name="name"
                 type="text"
-                placeholder="Oswil3"
+                placeholder="Nick"
                 value={this.state.name}
                 onChange={this.handleInputChange}
                 required
               />
             </label>
             <label>
-              Email *
               <input
                 name="email"
                 type="email"
@@ -56,7 +54,6 @@ export default class IndexPage extends React.Component {
               />
             </label>
             <label>
-              Message
               <textarea
                 id="message"
                 name="message"
@@ -65,7 +62,9 @@ export default class IndexPage extends React.Component {
                 placeholder="message"
               ></textarea>
             </label>
-            <button type="submit">Submit</button>{" "}
+            <button type="submit" className="buttonsubmit">
+              Submit
+            </button>{" "}
           </form>
         </div>
       </Layout>

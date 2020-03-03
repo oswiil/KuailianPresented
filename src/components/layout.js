@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 
-import Button from "./buttonLinks"
+import Buttons from "./buttonLinks"
 import "./layout.css"
 import "./styles.css"
 
@@ -20,9 +20,9 @@ function Layout({ children }) {
   return (
     <div>
       <Header siteTitle={"Kuailian Registry"} />
-
-      <Button className="fade" />
+      <Buttons className="fade" />
       <main className="fade">{children}</main>
+
       <FootDescript />
     </div>
   )

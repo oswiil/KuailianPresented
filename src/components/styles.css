@@ -1,96 +1,76 @@
 body {
   overflow-x: hidden;
-  background-image: url("/kuail.png");
-  background-repeat: no-repeat;
+
+  background-image: url(../images/backgrounds-2.png);
+  background-size: cover;
+
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  margin-bottom: 0;
+}
+iframe.video {
+  margin-left: 30%;
+  width: 480px;
+  height: 300px;
+  margin-bottom: 40px;
 }
 div.imageheader {
   max-width: 200px;
 }
 
+div.backimage {
+  position: absolute;
+  max-width: 20%;
+}
+
+div.afterimg {
+  position: left;
+  max-width: 20%;
+  float: right;
+}
 div.header {
-  color: white;
+  color: rgba(116, 180, 240, 0.856);
   margin: 0 auto;
   display: flex;
   width: 400px;
   padding-top: 10%;
 }
-div.FPKTlogo {
-  width: 120px;
-  margin: 0px 15%;
-}
-div.kuail_logo {
-  margin: 0px 15%;
-  float: right;
-  margin-top: 70px;
-}
-div.RSociales,
-.RSociales img {
-  float: left;
-  width: 25px;
-  margin: 0px 15%;
 
+div.contacto {
+  display: flex;
+  flex-direction: column;
+}
+td.iconos img {
+  width: 20px;
   display: flex;
 }
-
-div.ubi__footer,
-div.phone__footer,
-div.mail__footer {
-  width: 800px;
-  margin: 0 auto;
-  margin-left: 40%;
-  padding-bottom: 1px;
-  margin-bottom: 20px;
-}
-img.mail__image,
-img.ubi__image,
-img.phone__image {
+tr.social_iconos img {
   width: 25px;
+  margin: 19px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.rsocial img {
+  width: 20px;
   float: left;
-  margin: 0 10px;
 }
+footer {
+  max-width: 100%;
+  margin-left: 10%;
 
-footer,
-div.foooter {
-  background-image: url("/foooter.png");
-
-  color: white;
-  background-repeat: no-repeat;
-}
-footer p {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-div.reflink {
-  padding-top: 5%;
-  color: white;
-  border-radius: 30%;
-  padding-bottom: 20;
+  color: rgb(255, 255, 255);
 }
 
 div.start {
   padding-top: 5%;
   max-width: 600px;
   margin: 0 auto;
-  color: rgb(0, 0, 0);
+  color: rgb(188, 221, 252);
 }
 
-p.kuai__amount,
-div.kuai__amount,
-table.kuai__amount,
-table.kuai__amount textarea {
-  width: 30%;
-  color: white;
-  background-color: rgb(108, 182, 243);
-
-  padding: 10px;
-  margin: 20px auto;
-  box-shadow: teal;
-  border-radius: 20px;
-
-  padding: 30px 40px 30px;
-}
 div.Contact__title h2 {
   font-size: 28px;
 }
@@ -120,7 +100,7 @@ div.Contact__form textarea {
   margin: 4px 0;
 
   border: 1px solid rgb(148, 148, 148);
-  border-radius: 10px;
+  border-radius: 5px;
 
   padding: 20px 40px 5px;
 }
@@ -128,13 +108,15 @@ div.Contact__form input:hover,
 div.Contact__form textarea:hover,
 div.Contact__form input:focus,
 div.Contact__form textarea:focus {
-  background-color: rgba(128, 128, 128, 0.178);
+  background-color: rgb(79, 173, 250);
 }
-
+button.buttonsubmit {
+  margin-bottom: 30%;
+}
 .Links a:hover,
 .Links a.selected {
   color: black;
-  background: white;
+  background: rgba(116, 180, 240);
 }
 .Links a.selected {
   background-color: "Gray";
@@ -145,46 +127,38 @@ div.Contact__form textarea:focus {
 
 div.Links {
   width: 100%;
-  padding-top: 7%;
-  margin: 0 20%;
+
+  text-align: center;
 }
 
 .Links a {
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 40px;
+  border: 1px solid rgba(116, 180, 240);
+  border-radius: 2px;
 
-  padding: 30px 40px 30px;
   color: white;
-  margin: 5%;
-
-  font-size: 20px;
+  margin: 1px;
+  font-size: 13px;
   font-family: sans-serif;
   text-decoration: none;
 }
 
-button.links {
-  border-radius: 40px;
+button.referral {
+  border-radius: 10px;
 
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(79, 173, 250);
-  font-size: 20px;
-  align-content: center;
-  padding: 30px 40px 30px;
+  border: 1px solid rgba(116, 180, 240);
+  background-color: rgba(116, 180, 240);
+  font-size: 15px;
 
+  padding: 20px 40px 20px;
+  width: 20%;
   margin: 0 auto;
-  margin-top: 100px;
+
   display: flex;
 }
-.links:hover,
-.links.selected {
-  background-color: rgb(255, 255, 255);
-  color: goldenrod;
-}
-
-div.foo__background {
-  background-color: rgba(58, 192, 226, 0);
-  margin-top: 19%;
-  padding-top: 100px;
+.referral:hover,
+.referral.selected {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 
 html .fade {
@@ -199,7 +173,6 @@ html .fade {
   }
 }
 @media (max-width: 5000px) {
-  .imageheader,
   .pheader,
   div.rheader,
   div.pheader {
@@ -207,32 +180,33 @@ html .fade {
     box-sizing: border-box;
     padding: 20px;
   }
+  .Links a {
+    padding: 20px;
+    margin: 0 auto;
+  }
 
   @media (max-width: 1500px) {
-    .imageheader,
     .pheader,
     div.rheader,
-    div.pheader {
+    div.pheader,
+    .Links a {
       color: white;
       margin: 0 auto;
       width: calc(100% - 40px);
-      padding-top: 3%;
+      padding-top: 20px;
     }
+  }
+
+  @media (max-width: 900px) {
+    div.start {
+      width: 70%;
+    }
+
     div.Links,
     .links a {
-      font-size: 10px;
+      margin: 0 auto;
+      display: flex;
       width: calc(100%-40px);
     }
-  }
-}
-@media (max-width: 900px) {
-  div.imageheader {
-    width: 20%;
-  }
-  div.Links,
-  .links a {
-    margin: 0;
-    display: flex;
-    width: calc(100%-160px);
   }
 }

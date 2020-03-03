@@ -10,14 +10,12 @@ function Random() {
   ]
   const Randomise = () => {
     const ranpath = reflinks[Math.floor(Math.random() * reflinks.length)]
-    console.log(ranpath)
-
-    alert(ranpath)
+    window.location.href = ranpath
   }
   return (
     <ul>
-      <button onClick={() => Randomise()} className="links">
-        Registrate AQUI
+      <button onClick={() => Randomise()} className="referral">
+        h Registrate AQUI
       </button>
     </ul>
   )

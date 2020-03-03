@@ -2,40 +2,39 @@ import React from "react"
 
 const FootDescript = () => {
   return (
-    <footer className="foooter">
-      <div className="foo__background">
-        <div className="kuail_logo" alt="kuail_logo">
-          <img src="/download.png" />
-        </div>
-        <div className="FPKTlogo">
-          <img src="/FPKT.png" />
-        </div>
-        <div className="RSociales">
-          <img src="/face.png" alt="facebook" />
-          <img src="/twitter.png" alt="twitter" />
-          <img src="/insta.png" alt="instagram" />{" "}
-        </div>
-        <div className="info">
-          <div className="ubi__footer">
-            <img className="ubi__image" src="/ubi.png"></img>
-            <p>
-              <span>Cardenal Tedeschini</span>Barcelona, España
-            </p>
-          </div>
-          <div className="phone__footer">
-            <img className="phone__image" src="/phone.png"></img>
-            <p>+34 612 23 45 67</p>
-          </div>
-          <div className="mail__footer">
-            <img className="mail__image" src="/mail.png"></img>
-            <p>
-              <a href="mailto:info_farpotshket@gmail.com">
-                info_farpotshket@gmail.com
+    <footer className="footclass">
+      <table>
+        <tr>
+          <th>Siguenos</th>
+          <th>Contacto</th>
+          <th>Colaboradores</th>
+        </tr>
+        <tr>
+          <td>
+            <img className="fpktlogo" src="/FPKT.png" alt="Fpkt_Logo" />
+            <tr className="social_iconos">
+              <a href="www.facebook.com">
+                <img src="/Face.png" alt="Facebook" />
               </a>
-            </p>
-          </div>
-        </div>
-      </div>
+              <img src="/insta.png" alt="Instagram" />
+              <img src="/twitter.png" alt="Twitter" />
+            </tr>
+          </td>
+
+          <td className="iconos">
+            <img src="/ubi.png" alt="location" />
+            C/ Cardenal Tedeschini 3
+            <img src="/mail.png" alt="mail" />
+            info@farpotshket.com
+            <img src="/phone.png" alt="phone_contact" />
+            935512312
+          </td>
+
+          <td>
+            <img src="/download.png" alt="kuail_logo" />
+          </td>
+        </tr>
+      </table>
     </footer>
   )
 }

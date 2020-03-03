@@ -20,7 +20,7 @@ const links = [
 const selectedLinkClassName = link =>
   classnames({ selected: link === window.location.pathname })
 
-const Button = () => {
+const Buttons = () => {
   return (
     <div className="Links">
       {links.map(({ path, label }) => (
@@ -31,4 +31,4 @@ const Button = () => {
     </div>
   )
 }
-export default Button
+export default Buttons
